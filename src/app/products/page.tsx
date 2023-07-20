@@ -14,7 +14,7 @@ const Products = () => {
    
       <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-between flex-wrap py-4 duration-500 px-10">
         {/* Map over the products and conditionally display based on 'show' state */}
-        {show
+        {!show
           ? products.slice(0, 8).map((product, i) => (
               <Link key={i} href={`/products/${product.id}`}>
                 {/* Rest of the product JSX */}
@@ -83,7 +83,7 @@ const Products = () => {
           onClick={() => setShow((prevShow) => !prevShow)}
           className="bg-sky-300 rounded text-sm text-white h-[35px] w-[150px] hover:bg-white hover:text-sky-300 hover:border border-sky-300 duration-1000"
         >
-          {show ? "Show more" :"Show less "}
+          {show ? "Show less " :"Show more"}
         </Button>
       </div>
     </>
