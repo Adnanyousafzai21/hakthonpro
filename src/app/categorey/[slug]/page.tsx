@@ -27,7 +27,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <Image
                   src={products.image}
                   alt=""
-                  width={200}
+                  width={220}
                   height={200}
                   className="h-[200px] w-[220px]"
                 />
