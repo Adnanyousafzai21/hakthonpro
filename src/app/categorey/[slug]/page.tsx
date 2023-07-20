@@ -19,10 +19,10 @@ export default function Page({ params }: { params: { slug: string } }) {
       <div className="flex  flex-col items-center gap-6 sm:flex-row sm:justify-between flex-wrap p-10">
         {result.map((products,i) => {
           return (
-            <Link href={`/products${products.id}`}>
+            <Link href={`/products${products.id}`} key={i}>
               <div
                 className="border border-gray-600 rounded p-3  "
-                key={i}
+                
               >
                 <Image
                   src={products.image}

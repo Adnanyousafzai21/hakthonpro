@@ -14,8 +14,8 @@ export default function Page({ params }: { params: { id: string } }) {
       <div className="flex justify-center">
         {result.map((products,i) => {
           return (
-            <div className="flex  flex-col sm:flex-row sm:justify-between justify-center w-[700px] items-center  gap-y-7  py-20 ">
-              <div key={i} className="flex-1">
+            <div key={i} className="flex  flex-col sm:flex-row sm:justify-between justify-center w-[700px] items-center  gap-y-7  py-20 ">
+              <div className="flex-1">
                 <Image
                   src={products.image}
                   alt=""
