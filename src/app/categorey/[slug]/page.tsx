@@ -9,22 +9,20 @@ import { Button } from "@/app/component/ui/button";
 
 const getcategory = (category: string) => {
   const result = products.filter((products) => products.category === category);
-
   return result;
 };
-
 export default function Page({ params }: { params: { slug: string } }) {
   const result = getcategory(params.slug);
   return (
     <>
        <Categories />
       <div className="flex  flex-col items-center gap-6 sm:flex-row sm:justify-between flex-wrap p-10">
-        {result.map((products) => {
+        {result.map((products,i) => {
           return (
             <Link href={`/products${products.id}`}>
               <div
                 className="border border-gray-600 rounded p-3  "
-                key={products.id}
+                key={i}
               >
                 <Image
                   src={products.image}

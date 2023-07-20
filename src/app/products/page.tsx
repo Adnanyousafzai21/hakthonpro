@@ -15,8 +15,8 @@ const Products = () => {
       <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-between flex-wrap py-4 duration-500 px-10">
         {/* Map over the products and conditionally display based on 'show' state */}
         {show
-          ? products.slice(0, 8).map((product) => (
-              <Link key={product.id} href={`/products/${product.id}`}>
+          ? products.slice(0, 8).map((product, i) => (
+              <Link key={i} href={`/products/${product.id}`}>
                 {/* Rest of the product JSX */}
                 <div className="border border-gray-600 rounded p-2">
                   <Image
@@ -46,8 +46,8 @@ const Products = () => {
                 </div>
               </Link>
             ))
-          : products.map((product) => (
-              <Link key={product.id} href={`/products/${product.id}`}>
+          : products.map((product, i) => (
+              <Link key={i} href={`/products/${product.id}`}>
                 {/* Rest of the product JSX */}
                 <div className="border border-gray-600 rounded p-2">
                   <Image
