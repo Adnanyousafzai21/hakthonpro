@@ -22,7 +22,7 @@ export default function Page({ params }: { params: { id: string } }) {
                 <Image
                   src={products.image}
                   alt=""
-                  width={200}
+                  width={350}
                   height={200}
                   className="h-[300px] w-[300px]"
                 />

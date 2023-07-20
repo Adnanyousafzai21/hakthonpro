@@ -27,9 +27,9 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <Image
                   src={products.image}
                   alt=""
-                  width={220}
+                  width={250}
                   height={200}
-                  className="h-[200px] w-[220px]"
+                  className="h-[200px] w-[250px]"
                 />
               <div className="p-2 flex flex-col gap-y-1">
                     <p className="">

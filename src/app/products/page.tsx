@@ -22,9 +22,9 @@ const Products = () => {
                   <Image
                     src={product.image}
                     alt=""
-                    width={220}
+                    width={250}
                     height={200}
-                    className="h-[200px] w-[220px]"
+                    className="h-[200px] w-[250px]"
                   />
                   <div className="p-2 flex flex-col gap-y-1 px-5">
                     <p className="">
@@ -53,9 +53,9 @@ const Products = () => {
                   <Image
                     src={product.image}
                     alt=""
-                    width={220}
+                    width={250}
                     height={200}
-                    className="h-[200px] w-[220px]"
+                    className="h-[200px] w-[250px]"
                   />
                   <div className="p-2 flex flex-col gap-y-1 px-5">
                     <p className="">
