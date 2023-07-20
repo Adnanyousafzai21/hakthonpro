@@ -12,7 +12,7 @@ const Products = () => {
   return (
     <>
    
-      <div className="flex flex-col items-center gap-5 sm:flex-row sm:justify-between flex-wrap py-4 duration-500 px-10">
+      <div className="flex flex-col items-center gap-10 sm:flex-row sm:justify-between flex-wrap py-4 duration-500 px-8">
         {/* Map over the products and conditionally display based on 'show' state */}
         {!show
           ? products.slice(0, 8).map((product, i) => (
@@ -24,9 +24,9 @@ const Products = () => {
                     alt=""
                     width={200}
                     height={200}
-                    className="h-[180px] w-[200px]"
+                    className="h-[180px] w-[220px]"
                   />
-                  <div className="p-2 flex flex-col gap-y-1">
+                  <div className="p-2 flex flex-col gap-y-1 px-5">
                     <p className="">
                       Name: <span className="ml-2">{product.title.slice(0,10)}</span>
                     </p>
@@ -55,9 +55,9 @@ const Products = () => {
                     alt=""
                     width={200}
                     height={200}
-                    className="h-[180px] w-[200px]"
+                    className="h-[180px] w-[220px]"
                   />
-                  <div className="p-2 flex flex-col gap-y-1">
+                  <div className="p-2 flex flex-col gap-y-1 px-5">
                     <p className="">
                       Name: <span className="ml-2">{product.title.slice(0,10)}</span>
                     </p>

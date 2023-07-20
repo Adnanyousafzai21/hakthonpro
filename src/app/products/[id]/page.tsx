@@ -11,10 +11,13 @@ export default function Page({ params }: { params: { id: string } }) {
   console.log(result);
   return (
     <>
-      <div className="flex justify-center">
-        {result.map((products,i) => {
+      <div className="flex justify-center px-12">
+        {result.map((products, i) => {
           return (
-            <div key={i} className="flex  flex-col sm:flex-row sm:justify-between justify-center w-[700px] items-center  gap-y-7  py-20 ">
+            <div
+              key={i}
+              className="flex  flex-col sm:flex-row sm:justify-between justify-center w-[700px] items-center gap-x-5 gap-y-7  py-20 "
+            >
               <div className="flex-1">
                 <Image
                   src={products.image}
@@ -25,7 +28,9 @@ export default function Page({ params }: { params: { id: string } }) {
                 />
               </div>
               <div className="p-2 flex flex-col gap-y-3 flex-1 w-[80%]">
-                <p className="text-sky-500 font-medium">{products.title.slice(0, 38)}</p>
+                <p className="text-sky-500 font-medium">
+                  {products.title.slice(0, 45)}
+                </p>
                 <p>
                   Price: <span className="ml-5">${products.price}</span>{" "}
                 </p>
@@ -33,10 +38,15 @@ export default function Page({ params }: { params: { id: string } }) {
                   Category:<span className="ml-5">{products.category}</span>
                 </p>
                 {/* <p className="font-normal text-sky-500">Description:{products.description.slice(0,100)}</p> */}
-                 <p className="flex">Quantity:<span className="ml-5"><Quantity/></span></p>
-                 <Button className="bg-sky-300 rounded text-sm text-white h-[35px] w-[150px] hover:bg-white hover:text-sky-300 hover:border border-sky-300">
-             Add to Cart <ShoppingCart className="ml-3"/>
-          </Button>
+                <p className="flex">
+                  Quantity:
+                  <span className="ml-5">
+                    <Quantity />
+                  </span>
+                </p>
+                <Button className="bg-sky-300 rounded text-sm text-white h-[35px] w-[150px] hover:bg-white hover:text-sky-300 hover:border border-sky-300">
+                  Add to Cart <ShoppingCart className="ml-3" />
+                </Button>
               </div>
             </div>
           );
