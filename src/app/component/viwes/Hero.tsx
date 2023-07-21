@@ -10,7 +10,7 @@ const Hero = () => {
       <div className=" flex flex-col gap-y-10 justify-center items-center py-10 md:flex-row md:py-20 md:px-10 ">
         <div className=" flex-1">
           <Badge className="bg-sky-200 text-sky-700 ">70%</Badge>
-          <h1 className="scroll-m-20 text-4xl my-3">New Season Arrival</h1>
+          <h1 className="scroll-m-20 text-3xl sm:text-4xl my-3">New Season Arrival</h1>
           <p>Enjoy all new trends in the world.</p>
           <Button className=" duration-500 bg-sky-300 rounded text-sm text-white h-[40px] w-auto] hover:bg-white hover:text-sky-300 hover:border border-sky-700 mt-7 px-10 ">
                   Add to Cart <ShoppingCart className="ml-3"/>
