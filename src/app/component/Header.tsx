@@ -30,10 +30,10 @@ const Header = () => {
         placeholder="search"
         className=" w-45 h-6 rounded border-gray-500 text-sm md:absolute hidden"
       />
-      <div className="w-6 h-6 bg-gray-200 rounded-full flex justify-center items-center ">
+      <div className="w-6 h-6 bg-sky-100 rounded-full flex justify-center items-center ">
         <ShoppingCart className="w-4 h-4" />
       </div>
-      <div className=" md:hidden">
+      <div className=" md:hidden text-sky-300">
        { open?<X onClick={()=>{setOpen(!open)}}/> :<Menu onClick={()=>{setOpen(!open)}}/>}
          
       </div>
