@@ -14,7 +14,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex justify-between px-7 md:px-10 py-4 items-center relative z-[100]">
+    <div className="flex justify-between px-7 md:px-20 py-4 items-center relative z-[100] max-w-[1500px] m-auto">
 
       <Image src={frame} alt="logo " className="w-[170px]" />
 

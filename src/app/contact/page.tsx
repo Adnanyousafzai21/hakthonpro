@@ -5,7 +5,7 @@ import { Textarea } from "../component/ui/textarea";
 
 const Contact = () => {
   return (
-    <div className="">
+    <div className="max-w-[1800px] m-auto">
       <div className="w-[85%]  md:w-[60%] h-min-[60vh] mx-auto my-10 rounded border border-sky-500 pb-5">
         <h3 className="text-center my-10 text-sky-500 text-bolder">
           Contact Us

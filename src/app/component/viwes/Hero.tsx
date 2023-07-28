@@ -7,7 +7,7 @@ import { ShoppingCart } from "lucide-react";
 const Hero = () => {
   return (
     <div className="bg-sky-100">
-      <div className=" flex flex-col gap-y-10 justify-center items-center py-10 md:flex-row md:py-20 md:px-10 ">
+      <div className=" flex flex-col gap-y-10 justify-center items-center py-20 md:flex-row md:py-20 md:px-20 max-w-[1500px] m-auto">
         <div className=" flex-1">
           <Badge className="bg-sky-200 text-sky-700 ">70%</Badge>
           <h1 className="scroll-m-20 text-3xl sm:text-4xl my-3">New Season Arrival</h1>

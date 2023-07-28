@@ -11,12 +11,12 @@ export default function Page({ params }: { params: { id: string } }) {
   console.log(result);
   return (
     <>
-      <div className="flex justify-center px-12">
+      <div className="flex justify-center px-20">
         {result.map((products, i) => {
           return (
             <div
               key={i}
-              className="flex  flex-col sm:flex-row sm:justify-between justify-center w-[700px] items-center gap-x-5 gap-y-7  py-20 "
+              className="flex  flex-col sm:flex-row sm:justify-between justify-center w-[700px] items-center gap-x-5 gap-y-7  py-20 max-w-[1500px] m-auto"
             >
               <div className="flex-1">
                 <Image

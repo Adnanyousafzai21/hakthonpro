@@ -16,37 +16,35 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <Categories />
-      <div className="flex flex-col items-center gap-10 sm:flex-row sm:justify-between flex-wrap py-10 duration-500 px-12 ">
+      <div className="flex flex-col items-center gap-10 sm:flex-row sm:justify-between flex-wrap py-10 duration-500 px-20 max-w-[1500px] m-auto">
         {result.map((products, i) => {
           return (
             <Link href={`/products/${products.id}`} key={i}>
-              <div className="border  border-sky-300 rounded p-3  ">
-                <Image
-                  src={products.image}
-                  alt=""
-                  width={250}
-                  height={200}
-                  className="h-[200px] w-[250px]"
-                />
-                <div className="p-2 flex flex-col gap-y-1">
-                  <p className="">
-                    Name:{" "}
-                    <span className="ml-2">{products.title.slice(0, 10)}</span>
-                  </p>
-                  <p className="">
-                    Price: <span className="ml-2">${products.price}</span>
-                  </p>
-                  <p className="">
-                    Category:
-                    <span className="ml-2">
-                      {products.category.slice(0, 10)}
-                    </span>
-                  </p>
-                  <Button className="bg-sky-300 rounded text-sm text-white h-[30px] w-[120px] hover:bg-white hover:text-sky-300 hover:border border-sky-300">
-                    Details
-                  </Button>
+               <div className="bp-0 rounded pt-4 border border-sky-200 duration-300 w-[250px] hover:scale-105 ">
+                  <Image
+                    src={products.image}
+                    alt=""
+                    width={250}
+                    height={200}
+                    className="h-[160px] w-[200px] m-auto"
+                  />
+                  <div className=" flex flex-col items-center gap-y-3 pt-3 ">
+                    <p className="font-bold">
+                        {products.title.slice(0, 10)}
+                    </p>
+                    <p className="px-2 font-extralight">
+                        {products.description.slice(0, 48)}
+                    </p>
+                    <p className="font-bold">
+                       ${products.price}
+                      </p>
+                    
+                      <Button className="bg-sky-300 mb-0 text-sm text-white h-[35px] w-full hover:bg-white hover:text-black hover:border border-black">
+                        Details
+                      </Button>
+                   
+                  </div>
                 </div>
-              </div>
             </Link>
           );
         })}
