@@ -24,7 +24,7 @@ export default function Page({ params }: { params: { id: string } }) {
                   alt=""
                   width={350}
                   height={200}
-                  className="h-[300px] w-[300px]"
+                  className="h-[200px] w-[300px]"
                 />
               </div>
               <div className="p-2 flex flex-col gap-y-3 flex-1 w-[80%]">
