@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     <>
       <Categories />
-      <div className="flex flex-col items-center gap-10 sm:flex-row sm:justify-between flex-wrap py-10 duration-500 px-20 max-w-[1500px] m-auto">
+      <div className="flex flex-col items-center gap-10 sm:flex-row sm:justify-between px-16  flex-wrap py-10 duration-500 max-w-[1500px] m-auto">
         {result.map((products, i) => {
           return (
             <Link href={`/products/${products.id}`} key={i}>

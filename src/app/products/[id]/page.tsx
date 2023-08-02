@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { id: string } }) {
           return (
             <div
               key={i}
-              className="flex  flex-col sm:flex-row sm:justify-between justify-center w-[700px] items-center gap-x-5 gap-y-7  py-20 max-w-[1500px] m-auto"
+              className="flex  flex-col sm:flex-row sm:justify-between justify-center w-[700px] items-center gap-x-5 gap-y-7 border border-black  py-20 max-w-[1500px] m-auto"
             >
               <div className="flex-1">
                 <Image
