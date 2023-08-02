@@ -5,14 +5,7 @@ import products from "@/utils/moks";
 import Link from "next/link";
 import { Button } from "../component/ui/button";
 import Categories from "../component/viwes/categories";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/app/component/ui/card";
+
 
 const Products = () => {
   const [show, setShow] = useState(false);
