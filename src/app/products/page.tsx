@@ -12,7 +12,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="flex flex-col border border-black items-center  gap-10 sm:flex-row sm:justify-between  flex-wrap py-10 duration-500 px-16 max-w-[1500px] m-auto">
+      <div className="flex flex-col border border-black items-center  gap-10 sm:flex-row sm:justify-between  flex-wrap py-10 duration-500 px-15 max-w-[1500px] m-auto">
         {!show
           ? products.slice(0, 8).map((product, i) => (
               <Link key={i} href={`/products/${product.id}`}>
