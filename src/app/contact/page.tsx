@@ -43,11 +43,11 @@ const Contact = () => {
               <Input
                 type="text"
                 placeholder="Email"
-                className=" outline-none w-60 md:w-[80%] md:h-12  border-none   p-4 rounded bg-white"
+                className=" outline-none w-60 md:w-[84%] md:h-12  border-none   p-4 rounded bg-white"
               />
               <Textarea
                 placeholder="Massage...."
-                className=" outline-none w-60 md:w-[80%] md:h-30 border-none   text-start rounded bg-white"
+                className=" outline-none w-60 md:w-[84%] md:h-30 border-none   text-start rounded bg-white"
               />
               <Button className=" outline-none bg-sky-300 rounded px-20 py-5  text-white h-[30px] w-[120px] hover:bg-white hover:text-black hover:border border-black text-lg">
                 Send
