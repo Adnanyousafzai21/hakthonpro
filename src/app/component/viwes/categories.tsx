@@ -4,13 +4,7 @@ const Categories = () => {
 
   return (
 
-    // <div className="buttons d-flex justify-content-center mb-5 pb-5">
-    //     <button className="btn btn-outline-dark me-2"      onClick={()=>{setFilter(data)}}>All</button>
-    //     <button className="btn btn-outline-dark me-2" onClick={()=>{FilterProduct("men's clothing")}}>Men's Clothing</button>
-    //     <button className="btn btn-outline-dark me-2" onClick={()=>{FilterProduct("women's clothing")}}>Women's Clothing</button>
-    //     <button className="btn btn-outline-dark me-2" onClick={()=>{FilterProduct("jewelery")}}>jewelry</button>
-    //     <button className="btn btn-outline-dark me-2" onClick={()=>{FilterProduct("electronics")}}>gadgets</button>
-    //   </div>
+  
     <div>
        <ul className="flex gap-3 sm:gap-5 justify-center mt-10">
         <li className="border-b-2 border-3  hover:border-sky-300 hover:text-sky-300"> <Link  href={'/categorey/women'}>Women</Link></li>
