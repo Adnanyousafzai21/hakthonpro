@@ -12,7 +12,7 @@ export default function Page({ params }: { params: { id: string } }) {
   return (
     <>
       <div className="flex justify-center md:px-8 py-10 lg:px-20 width-[100%] ">
-        { result && result.map((result) => (
+        { result.length>0? (result.map((result) => (
           <div
             key={result?.id}
             className=" w-[90%] md:w-[80%]  flex md:px-10 flex-col sm:flex-row lg:justify-between justify-center  items-center gap-x-5 gap-y-7 py-20 max-w-[1500px] m-auto"
@@ -109,8 +109,8 @@ export default function Page({ params }: { params: { id: string } }) {
                 </Button>
               </div>
             </div>
-          </div>
-        ))}
+          </div>)
+        )):" page not found"}
       </div>
     </>
   );
