@@ -3,7 +3,7 @@ import Image from "next/image";
 import Myproject from "/public/ecomrce.png";
 import { Badge } from "@/app/component/ui/badge";
 import { Button } from "@/app/component/ui/button";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 const Hero = () => {
   return (
     <div className="bg-sky-100">
@@ -12,8 +12,8 @@ const Hero = () => {
           <Badge className="bg-sky-200 text-sky-700 ">70%</Badge>
           <h1 className="scroll-m-20 text-3xl sm:text-4xl my-3">New Season Arrival</h1>
           <p>Enjoy all new trends in the world.</p>
-          <Button className=" duration-500 bg-sky-300 rounded text-sm text-white h-[40px] w-auto] hover:bg-white hover:text-sky-300 hover:border border-sky-700 mt-7 px-10 ">
-                  Add to Cart <ShoppingCart className="ml-3"/>
+          <Button className=" duration-500 bg-sky-300 rounded text-sm group text-white h-[40px] w-auto] hover:bg-white hover:text-sky-300 hover:border border-sky-700 mt-7 px-10 ">
+              <ShoppingBag className="mr-7 duration-400 group-hover:animate-bounce"/>    Shop now 
                     </Button>
         </div>
         <div className="">

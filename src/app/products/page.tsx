@@ -12,7 +12,7 @@ const Products = () => {
 
   return (
     <>
-     <div className="flex flex-col items-center  gap-10 md:flex-row md:justify-between  flex-wrap py-10 duration-500 px-28 max-w-[1500px] m-auto">
+     <div className="flex flex-col items-center  gap-10 md:flex-row md:justify-between  flex-wrap py-10 duration-500 md:px-28 max-w-[1500px] m-auto">
         {!show
           ? products.slice(0, 8).map((product, i) => (
               <Link key={i} href={`/products/${product.id}`}>
@@ -78,7 +78,7 @@ const Products = () => {
       <div className="flex justify-center w-full">
         <Button
           onClick={() => setShow((prevShow) => !prevShow)}
-          className="bg-sky-300 rounded text-sm text-white h-[35px] w-[150px] hover:bg-white hover:text-sky-300 hover:border border-sky-300 duration-1000"
+          className="bg-sky-300 rounded mb-8 text-sm text-white h-[35px] w-[150px] hover:bg-white hover:text-sky-300 hover:border border-sky-300 duration-1000"
         >
           {show ? "Show less " : "Show more"}
         </Button>
