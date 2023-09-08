@@ -3,6 +3,7 @@ import products from "@/utils/moks";
 import { Button } from "@/app/component/ui/button";
 import Quantity from "@/app/component/quantity";
 import { ShoppingCart } from "lucide-react";
+import Link from "next/link";
 const getproductid = (id: number | string) => {
   return products.filter((product) => product.id == id);
 };
@@ -104,7 +105,7 @@ export default function Page({ params }: { params: { id: string } }) {
               </p>
               <div className="flex justify-between w-[100%]">
               <div><span className="font-bold">${result?.price}</span><span className="ml-2 line-through font-semibold">${result?.price}</span></div>
-                <Button className="bg-sky-300 rounded text-sm text-white h-[35px] w-[150px] hover:bg-white hover:text-sky-300 hover:border border-sky-300">
+                <Button  className="bg-sky-300 rounded text-sm text-white h-[35px] w-[150px] hover:bg-white hover:text-sky-300 hover:border border-sky-300">
                   Add to Cart <ShoppingCart className="ml-3" />
                 </Button>
               </div>
