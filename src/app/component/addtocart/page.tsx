@@ -7,84 +7,84 @@ const page = () => {
   return (
     <div className="py-20  md:w-[70%] m-auto w-[95%]">
       <div className="flex justify-between px-2 md:px-5 bg-sky-500 text-white items-center">
-        <div className="flex gap-3 col-span-2">Products</div>
+        <div className="flex gap-3 w-40%">Products</div>
         <div>Quantity</div>
         <div>Price</div>
       </div>
 
-      <div className="flex justify-between py-5 md:px-5 items-center">
-        <div className="flex gap-3">
+      <div className="flex justify-between pt-3 pb-7 md:px-5 items-center border-0 relative border-b-2 border-b-sky-100">
+        <div className="flex flex-col gap-1 flex-2">
           <Image
             src={image}
             alt="cardImage"
-            className="rounded w-[65px] md:[100px] h-[80px]"
+            className="rounded w-[75px] md:[100px] h-[80px]"
             width={100}
             height={50}
           />
-          <div className="flex flex-col gap-1 md:gap-3 flex-1">
-            <p>title</p>
-            <p>price</p>
-            <p className="text-red-950 font-bold">{<Trash2 />}</p>
+          <div>
+            <p className="line-clamp-1 w-[180px] md:font-bold text-sky-300  absolute" >
+              this is me adnan rafiq d dfkakdfa fjek
+            </p>
           </div>
         </div>
-        <div>
+        <div className="">
           <Quantity />
         </div>
-        <div>
+        <div className="flex flex-col gap-3 items-center ">
           <p>$500</p>
+          <p className="text-red-950 font-bold">{<Trash2 />}</p>
         </div>
       </div>
 
-      <div className="flex justify-between py-5 md:px-5 items-center">
-        <div className="flex gap-3">
+      <div className="flex justify-between pt-3 pb-7 md:px-5 items-center border-0 relative border-b-2 border-b-sky-100">
+        <div className="flex flex-col gap-1 flex-2">
           <Image
             src={image}
             alt="cardImage"
-            className="rounded w-[65px] md:[100px] h-[80px]"
+            className="rounded w-[75px] md:[100px] h-[80px]"
             width={100}
             height={50}
           />
-          <div className="flex flex-col gap-1 md:gap-3 ">
-            <p>title</p>
-            <p>price</p>
-            <p className="text-red-950 font-bold">{<Trash2 />}</p>
+          <div>
+            <p className="line-clamp-1 w-[180px] md:font-bold text-sky-300  absolute" >
+              this is me adnan rafiq d dfkakdfa fjek
+            </p>
           </div>
         </div>
-
-        <div>
+        <div className="">
           <Quantity />
         </div>
-        <div>
+        <div className="flex flex-col gap-3 items-center ">
           <p>$500</p>
+          <p className="text-red-950 font-bold">{<Trash2 />}</p>
         </div>
       </div>
 
-      <div className="flex justify-between py-5 md:px-5 items-center">
-        <div className="flex gap-3">
+      <div className="flex justify-between pt-3 pb-7 md:px-5 items-center border-0 relative border-b-2 border-b-sky-100">
+        <div className="flex flex-col gap-1 flex-2">
           <Image
             src={image}
             alt="cardImage"
-            className="rounded w-[65px] md:[100px] h-[80px]"
+            className="rounded w-[75px] md:[100px] h-[80px]"
             width={100}
             height={50}
           />
-          <div className="flex flex-col gap-1 md:gap-3">
-            <p>title</p>
-            <p>price</p>
-            <p className="text-red-950 font-bold">{<Trash2 />}</p>
+          <div>
+            <p className="line-clamp-1 w-[180px] md:font-bold text-sky-300  absolute" >
+              this is me adnan rafiq d dfkakdfa fjek
+            </p>
           </div>
         </div>
-
-        <div>
+        <div className="">
           <Quantity />
         </div>
-        <div>
+        <div className="flex flex-col gap-3 items-center ">
           <p>$500</p>
+          <p className="text-red-950 font-bold">{<Trash2 />}</p>
         </div>
       </div>
-
       <div className="w-full flex justify-center md:justify-end">
-        <div className="flex flex-col gap-4 w-[300px] px-10 border-0 py-3 border-t-4 border-t-sky-500">
+        <div className="flex flex-col gap-4 w-[300px] px-10 border-0 py-3 border-t-2 -mt-1 border-t-sky-300">
           <div className="flex justify-between">
             <p>Subtotal</p>
             <p>$1000</p>
