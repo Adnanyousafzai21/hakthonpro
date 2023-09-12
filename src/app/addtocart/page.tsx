@@ -3,10 +3,9 @@ import React from "react";
 import Image from "next/image";
 import image from "/public/images.jpg";
 import Quantity from "../component/quantity";
-import { useSelector } from "react-redux";
 import { Trash2 } from "lucide-react";
 import { useAppSelector } from "../../../redux/hooks";
-const page = () => {
+const Page = () => {
   const cartItems =  useAppSelector((state:any) => state.cart.items);
   cartItems.map((cartt:any)=>{
 console.log(cartt.img);
@@ -121,4 +120,4 @@ console.log(cartt.img);
   );
 };
 
-export default page;
+export default Page;
