@@ -1,15 +1,29 @@
+"use client"
 import Image from "next/image";
 import products from "@/utils/moks";
 import { Button } from "@/app/component/ui/button";
 import Quantity from "@/app/component/quantity";
 import { ShoppingCart } from "lucide-react";
-import Link from "next/link";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../../redux/feature/card";
 const getproductid = (id: number | string) => {
   return products.filter((product) => product.id == id);
 };
+
 export default function Page({ params }: { params: { id: string } }) {
-  const result = getproductid(params.id);
-  console.log(result);
+  const dispatch= useDispatch()
+   const result  = getproductid(params.id);
+   const firstProduct=result[0]
+  const [data, setdata]=useState({
+          id: firstProduct.id,
+          title: firstProduct.title,
+          price: firstProduct.price,
+          img: firstProduct.image,
+        });
+  const addtocart=()=>{
+    dispatch(addToCart(data))
+  }
   return (
     <>
       <div className="flex justify-center md:px-8 py-10 lg:px-20 width-[100%] ">
@@ -21,7 +35,7 @@ export default function Page({ params }: { params: { id: string } }) {
             <div className="flex-1">
               <Image
                 src={result?.image}
-                alt=""
+                alt="slug pic"
                 className="md:h-[350px] h-[300px] w-[270px] "
                 width={350}
                 height={270}
@@ -39,7 +53,6 @@ export default function Page({ params }: { params: { id: string } }) {
                   type="radio"
                   name="rating-2"
                   className="mask mask-star-2 bg-orange-400"
-                  checked
                 />
                 <input
                   type="radio"
@@ -95,17 +108,17 @@ export default function Page({ params }: { params: { id: string } }) {
                   </div>
                 </div>
               </div>
-              <p>
+              <div>
                 <div className="flex my-3">
                   Quantity:
                   <span className="ml-5">
                     <Quantity />
                   </span>
                 </div>
-              </p>
+              </div>
               <div className="flex justify-between w-[100%]">
               <div><span className="font-bold">${result?.price}</span><span className="ml-2 line-through font-semibold">${result?.price}</span></div>
-                <Button  className="bg-sky-300 rounded text-sm text-white h-[35px] w-[150px] hover:bg-white hover:text-sky-300 hover:border border-sky-300">
+                <Button onClick={addtocart} className="bg-sky-300 rounded text-sm text-white h-[35px] w-[150px] hover:bg-white hover:text-sky-300 hover:border border-sky-300">
                   Add to Cart <ShoppingCart className="ml-3" />
                 </Button>
               </div>

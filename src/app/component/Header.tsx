@@ -8,11 +8,12 @@ import { ShoppingCart } from "lucide-react";
 import { Menu } from "lucide-react";
 import { Input } from "@/app/component/ui/input";
 import { X } from "lucide-react";
-import { useRouter } from 'next/router';
+import { useAppSelector } from "../../../redux/hooks";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-
+const data = useAppSelector((state:any)=>state.cart.items)
+console.log(data.length)
   return (
     <div className="flex justify-between px-7 md:px-20 py-4 items-center relative z-[100] max-w-[1500px] m-auto">
 
@@ -24,14 +25,9 @@ const Header = () => {
        <Link href={"/categorey/women"}><li className="my-3 p-3 md:my-auto md:py-0 w-[200px] md:w-auto rounded bg-sky-100 cursor-pointer  md:hover-bg md:bg-white md:border-b-2   hover:border-sky-300 ">Categories</li></Link> 
        <Link href={"/contact"}><li className="my-3 p-3 md:my-auto md:py-0 w-[200px] md:w-auto rounded bg-sky-100 cursor-pointer  md:hover-bg md:bg-white md:border-b-2   hover:border-sky-300 ">Contact us</li></Link> 
       </ul>
-      
-      <Input
-        type="search"
-        placeholder="search"
-        className=" w-45 h-6 rounded border-gray-500 text-sm md:absolute hidden"
-      />
-      <Link href={"/component/addtocart"} className="w-6 h-6 bg-sky-100 rounded-full flex justify-center items-center ">
-        <ShoppingCart className="w-4 h-4" />
+      <Link href={"/addtocart"} className="relative w-8 h-8 bg-sky-100 rounded-full flex justify-center items-center ">
+        <ShoppingCart className="w-5 h-5" />
+        {data.length > 0 ? <span className=" text-red-600 -mt-8 -mr-5 rounded-full bg-sky-500 w-5 font-semibold h-5 flex justify-center items-center p-2 absolute ">{data.length}</span>:" "}
       </Link>
       <div className=" md:hidden text-sky-300">
        { open?<X onClick={()=>{setOpen(!open)}}/> :<Menu onClick={()=>{setOpen(!open)}}/>}

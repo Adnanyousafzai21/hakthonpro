@@ -23,7 +23,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                <div className="bp-0 rounded pt-4 border border-sky-200 duration-300 w-[250px] hover:scale-105 ">
                   <Image
                     src={products.image}
-                    alt=""
+                    alt="catergory"
                     width={250}
                     height={200}
                     className="h-[160px] w-[200px] m-auto"
