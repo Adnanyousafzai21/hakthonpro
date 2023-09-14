@@ -1,11 +1,10 @@
 "use client";
-
 import React from "react";
 import { Input } from "../component/ui/input";
 import { Button } from "../component/ui/button";
 import { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [right, setright] = useState(true);
   const signin = () => {
     setright(true);
@@ -85,4 +84,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
