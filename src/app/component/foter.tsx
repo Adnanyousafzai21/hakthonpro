@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-8 text-sm text-gray-600">
-         Created by <span className="text-sky-500">Adnan Rafiq Yousafzai</span> 
+         Created by <span className="text-sky-300">Adnan Rafiq Yousafzai</span> 
           © Copyright 2023. All rights reserved.
         </div>
 

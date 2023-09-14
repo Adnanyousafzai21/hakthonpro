@@ -3,7 +3,7 @@ import {  typeproducts } from "./types";
 const products:typeproducts[] = [
   {
     id: 1,
-    color:["red-700", "white","black"],
+    color:["red", "white","black"],
     size:["L","M","SM"],
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
     price: 109.95,
