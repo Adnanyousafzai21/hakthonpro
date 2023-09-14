@@ -10,7 +10,7 @@ const Contact = () => {
         <h3 className="text-center  text-sky-500 text-bolder mb-7 text-3xl">
           Contact Us
         </h3>
-        <div className="flex md:justify-between gap-5  md:flex-row flex-col items-center ">
+        <div className="flex md:justify-between gap-5 px-4 sm:px-5  md:flex-row flex-col items-center ">
           <div className="md:w-[45%] w-[90%]  m-auto overflow-hidden">
             <div className=" flex justify-center">
               <iframe
@@ -23,9 +23,9 @@ const Contact = () => {
               ></iframe>
             </div>
           </div>
-          <div className=" md:w-[45%] h-mix-[40vh] rounded   w-[90%] ">
+          <div className=" md:w-[45%] h-mix-[40vh] rounded  border border-red-500 m-auto w-[90%] ">
             <div
-              className="flex flex-col items-center gap-y-5 bg-sky-300/20 m-auto border border-sky-200 py-10 md:py-20  w-[100%]"
+              className="flex flex-col items-center gap-y-5 bg-sky-300/20 m-auto border border-sky-200 py-10 md:py-16  w-[100%]"
               style={{ borderRadius: "5px" }}
             >
               <div className="flex justify-center flex-col md:flex-row gap-5">

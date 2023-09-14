@@ -7,15 +7,15 @@ import { ShoppingBag } from "lucide-react";
 const Hero = () => {
   return (
     <div className="bg-sky-100">
-      <div className=" flex flex-col gap-y-10 justify-center items-center py-20 md:flex-row md:py-20 md:px-20 max-w-[1500px] m-auto">
-        <div className=" flex-1">
+      <div className=" flex flex-col gap-y-10 justify-center items-center py-10 md:flex-row md:py-20 md:px-20 max-w-[1500px] m-auto">
+        <div className=" flex-1 text-center sm:text-left">
           <Badge className="bg-sky-200 text-sky-700 ">70%</Badge>
-          <h1 className="scroll-m-20 text-3xl sm:text-4xl my-3">
+          <h1 className="scroll-m-20 text-3xl sm:text-4xl my-2">
             New Season Arrival
           </h1>
           <p>Enjoy all new trends in the world.</p>
-          <Button className=" duration-500 bg-sky-300 rounded text-sm group text-white h-[40px] w-auto] hover:bg-white hover:text-sky-300 hover:border border-sky-700 mt-7 px-10 ">
-            <ShoppingBag className="mr-7 duration-400 group-hover:animate-bounce" />{" "}
+          <Button className=" duration-500 bg-sky-300 rounded text-sm group text-white h-[40px] w-auto] hover:bg-white hover:text-sky-300 hover:border border-sky-700 mt-5 px-7 sm:px-10 ">
+            <ShoppingBag className="sm:mr-7 mr-4 duration-400 group-hover:animate-bounce" />
             Shop now
           </Button>
         </div>

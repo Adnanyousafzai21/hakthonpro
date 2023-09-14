@@ -3,6 +3,8 @@ import {  typeproducts } from "./types";
 const products:typeproducts[] = [
   {
     id: 1,
+    color:["red-700", "white","black"],
+    size:["L","M","SM"],
     title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
     price: 109.95,
     description:
@@ -12,6 +14,8 @@ const products:typeproducts[] = [
   },
   {
     id: 2,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "Mens Casual Premium Slim Fit T-Shirts ",
     price: 22.3,
     description:
@@ -22,6 +26,8 @@ const products:typeproducts[] = [
   },
   {
     id: 3,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "Mens Cotton Jacket",
     price: 55.99,
     description:
@@ -31,6 +37,8 @@ const products:typeproducts[] = [
   },
   {
     id: 4,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "Mens Casual Slim Fit",
     price: 15.99,
     description:
@@ -40,6 +48,8 @@ const products:typeproducts[] = [
   },
   {
     id: 5,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title:
       "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
     price: 695,
@@ -50,6 +60,8 @@ const products:typeproducts[] = [
   },
   {
     id: 6,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "Solid Gold Petite Micropave ",
     price: 168,
     description:
@@ -58,6 +70,8 @@ const products:typeproducts[] = [
   },
   {
     id: 7,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "White Gold Plated Princess",
     price: 9.99,
     description:
@@ -67,6 +81,8 @@ const products:typeproducts[] = [
   },
   {
     id: 8,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "Pierced Owl Rose Gold Plated Stainless Steel Double",
     price: 10.99,
     description:
@@ -76,6 +92,8 @@ const products:typeproducts[] = [
   },
   {
     id: 9,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
     price: 64,
     description:
@@ -85,6 +103,8 @@ const products:typeproducts[] = [
   },
   {
     id: 10,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
     price: 109,
     description:
@@ -94,6 +114,8 @@ const products:typeproducts[] = [
   },
   {
     id: 11,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title:
       "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
     price: 109,
@@ -104,6 +126,8 @@ const products:typeproducts[] = [
   },
   {
     id: 12,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title:
       "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
     price: 114,
@@ -114,6 +138,8 @@ const products:typeproducts[] = [
   },
   {
     id: 14,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title:
       "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
     price: 999.99,
@@ -124,6 +150,8 @@ const products:typeproducts[] = [
   },
   {
     id: 15,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
     price: 56.99,
     description:
@@ -133,6 +161,8 @@ const products:typeproducts[] = [
   },
   {
     id: 16,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title:
       "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
     price: 29.95,
@@ -143,6 +173,8 @@ const products:typeproducts[] = [
   },
   {
     id: 17,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
     price: 39.99,
     description:
@@ -152,6 +184,8 @@ const products:typeproducts[] = [
   },
   {
     id: 18,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "MBJ Women's Solid Short Sleeve Boat Neck V ",
     price: 9.85,
     description:
@@ -161,6 +195,8 @@ const products:typeproducts[] = [
   },
   {
     id: 19,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "Opna Women's Short Sleeve Moisture",
     price: 7.95,
     description:
@@ -170,6 +206,8 @@ const products:typeproducts[] = [
   },
   {
     id: 20,
+    color:["red","white","black"],
+    size:["L","M","SM"],
     title: "DANVOUY Womens T Shirt Casual Cotton Short",
     price: 12.99,
     description:
