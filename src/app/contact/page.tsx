@@ -43,7 +43,7 @@ const Contact = () => {
               <Input
                 type="text"
                 placeholder="Email"
-                className=" outline-none w-64 md:w-[84%] md:h-12  border-none   p-4 rounded bg-white"
+                className=" outline-none w-64 md:w-[84%] h-12  border-none   p-4 rounded bg-white"
               />
               <Textarea
                 placeholder="Massage...."
