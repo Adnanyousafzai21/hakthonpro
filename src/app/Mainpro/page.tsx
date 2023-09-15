@@ -43,8 +43,8 @@ const Mainpro = () => {
   console.log(uproute);
   return (
     <div>
-        <div className="tex-xl text-center text-sky-300 text-bold  mt-10">Categories</div>
-         <div className="flex flex-col items-center  gap-10 md:flex-row md:justify-between  flex-wrap py-10 duration-500 md:px-28 max-w-[1500px] m-auto">
+        <div className="text-xl text-center text-sky-300 text-bold  mb-5 mt-16">Categories</div>
+         <div className="flex flex-col items-center  gap-10 md:flex-row md:justify-between  flex-wrap py-10 duration-500 md:px-20 max-w-[1500px] m-auto">
      
       {categries.map((prod) => (
                       <Link key={prod.name} href={prod.url}>
@@ -56,7 +56,7 @@ const Mainpro = () => {
                             alt="prod"
                             width={250}
                             height={200}
-                            className="h-[160px] w-[200px] m-auto mb-5"
+                            className="h-[160px] w-[200px] m-auto my-6 mb-10"
                           />
                         ) : (
                           <div className="placeholder-image">
