@@ -44,14 +44,14 @@ const ProdFeature = () => {
         ]
       };
   return (
-    <div className='max-w-[1500px] px-20 my-10 m-auto'>
+    <div className='max-w-[1500px] px-10 my-10 m-auto'>
         <div className="text-xl text-center text-sky-300 text-bold  mb-5">Products Features</div>
        
         <Slider {...settings}>
        {products.slice(0, 8).map((product, i) => (
               <Link key={i} href={`/products/${product.id}`}>
            
-                <div className="bp-0 rounded pt-4 ml-7 my-10 py-5 duration-300 max-w-[250px] border border-sky-200 " style={{boxShadow:"-1px -1px 5px 2px #e0e0eb"}}>
+                <div className="bp-0 rounded pt-4 m-auto my-10 py-5 duration-300 max-w-[250px] border border-sky-200 " style={{boxShadow:"-1px -1px 5px 2px #e0e0eb"}}>
                   {product.image ? (
                     <Image
                       src={product.image}
