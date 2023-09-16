@@ -43,7 +43,9 @@ const Mainpro = () => {
   console.log(uproute);
   return (
     <div>
-        <div className="text-xl text-center text-sky-300 text-bold  mb-5 mt-16">Categories</div>
+        <div className="text-xl text-center text-sky-300 text-bold   mt-16">Categories</div>
+        <div className='flex justify-center items-center mt-3 -ml-3 mb-5'><span className='w-3 h-3 rounded-full bg-customcolor '></span><span className='rounded bg-customcolor w-[100px] h-[1px]  -ml-1'></span></div>
+
          <div className="flex flex-col items-center  gap-10 md:flex-row md:justify-between  flex-wrap py-10 duration-500 md:px-20 max-w-[1500px] m-auto">
      
       {categries.map((prod) => (
@@ -77,7 +79,7 @@ const Mainpro = () => {
                           </p>
                          
       
-                          <Button className="bg-sky-300 mb-0 text-sm text-white h-[35px] w-full outline-none border-t border-white hover:bg-white hover:text-black "style={{borderRadius:"0px 0px 5px 5px"}}>
+                          <Button className="bg-sky-300 mb-0 text-sm text-white h-[35px] w-full outline-none border-t border-customcolor hover:bg-white hover:text-black "style={{borderRadius:"0px 0px 5px 5px"}}>
                       Explore porducts
                           </Button>
                         </div>

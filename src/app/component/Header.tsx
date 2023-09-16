@@ -31,7 +31,7 @@ const pathname = usePathname()
        <Link href={"/signin"}><li className={`my-3 p-3 lg:my-auto lg:py-0 w-[200px] lg:w-auto rounded bg-sky-200 cursor-pointer  lg:hover-bg lg:bg-white lg:border-b-2   hover:border-sky-300 text-center ${pathname=='/signin'?'border-sky-300 sm:text-sky-300 text-white':''}`}>Sign In</li></Link> 
       </ul>
       <Link href={"/addtocart"} className="relative w-8 h-8 bg-sky-100 rounded-full flex justify-center items-center ">
-        <ShoppingCart className="w-5 h-5" />
+        <ShoppingCart className="w-5 h-5 text-customcolor" />
         {data.length > 0 ? <span className=" text-red-600 -mt-8 -mr-5 rounded-full bg-sky-500 w-5 font-semibold h-5 flex justify-center items-center p-2 absolute ">{data.length}</span>:" "}
       </Link>
       <div className=" lg:hidden text-sky-400">

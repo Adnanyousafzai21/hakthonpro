@@ -45,7 +45,8 @@ const ProdFeature = () => {
       };
   return (
     <div className='max-w-[1500px] px-10 my-10 m-auto'>
-        <div className="text-xl text-center text-sky-300 text-bold  mb-5">Products Features</div>
+        <div className="text-xl  text-sky-300 text-bold text-center">Products Features</div>
+<div className='flex justify-center items-center mt-3 -ml-6'><span className='w-3 h-3 rounded-full bg-customcolor '></span><span className='rounded bg-customcolor w-[140px] h-[1px]  -ml-1'></span></div>
        
         <Slider {...settings}>
        {products.slice(0, 8).map((product, i) => (

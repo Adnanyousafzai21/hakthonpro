@@ -57,7 +57,7 @@ export default function Page({ params }: { params: { id: string } }) {
                     </span>
                   </p>
                   {/* color and size */}
-                  <div className="flex mt-2 items-center border-b-2 pb-2  border-gray-100 ">
+                  <div className="flex mt-2 items-center border-b-2 pb-2  border-gray-100 justify-between ">
                     <div className="flex">
                       <span className="mr-3">Color</span>
                       {result.color.map((color: string) => (
@@ -78,7 +78,7 @@ export default function Page({ params }: { params: { id: string } }) {
                           }
                           className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10"
                         >
-                          <option>select size</option>
+                          <option>size</option>
                           {result.size.map((size) => (
                             <option key={size}>{size}</option>
                           ))}
@@ -111,7 +111,7 @@ export default function Page({ params }: { params: { id: string } }) {
                     <div>
                       <span className="font-bold">${result?.price}</span>
                       <span className="ml-2 line-through font-semibold">
-                        ${result?.price}
+                        ${(result?.price+10).toFixed(2)}
                       </span>
                     </div>
                     <Button

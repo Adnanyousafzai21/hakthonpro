@@ -6,6 +6,7 @@ import Categories from "@/app/component/viwes/categories";
 import Home from "@/app/page";
 import Link from "next/link";
 import { Button } from "@/app/component/ui/button";
+import { Heart } from "lucide-react";
 
 const getcategory = (category: string) => {
   const result = products.filter((products) => products.category === category);
@@ -32,15 +33,15 @@ export default function Page({ params }: { params: { slug: string } }) {
                     <p className="font-bold">
                         {products.title.slice(0, 10)}
                     </p>
-                    <p className="px-2 font-extralight">
-                        {products.description.slice(0, 48)}
+                    <p className=" text-center font-extralight line-clamp-2 px-4">
+                        {products.description}
                     </p>
-                    <p className="font-bold">
+                    <div className="flex justify-between w-[100%] px-5"><Heart className="text-customcolor   "/><p className="font-bold text-customcolor ">
                        ${products.price}
-                      </p>
+                      </p></div>
                     
-                      <Button className="bg-sky-300 mb-0 text-sm text-white h-[35px] w-full hover:bg-white hover:text-black hover:border border-black">
-                        Details
+                      <Button className="bg-sky-300 mb-0 text-sm text-white h-[35px] w-full hover:bg-white hover:text-black hover:border-t border-t-customcolor ">
+                     Add To Cart
                       </Button>
                    
                   </div>

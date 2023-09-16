@@ -7,9 +7,11 @@ const Contact = () => {
   return (
     <div className="max-w-[1500px] py-7 md:px-20 m-auto">
       <div className="  rounded py-10 bg-sky-50">
-        <h3 className="text-center  text-sky-500 text-bolder mb-7 text-3xl">
+        <h3 className="text-center  text-sky-500   text-xl">
           Contact Us
         </h3>
+        <div className='flex justify-center items-center mb-7 mt-3 -ml-3'><span className='w-3 h-3 rounded-full bg-customcolor '></span><span className='rounded bg-customcolor w-[100px] h-[1px]  -ml-1'></span></div>
+
         <div className="flex md:justify-between gap-5 px-4 sm:px-5  md:flex-row flex-col items-center ">
           <div className="md:w-[45%] w-[90%]  m-auto overflow-hidden">
             <div className=" flex justify-center">
