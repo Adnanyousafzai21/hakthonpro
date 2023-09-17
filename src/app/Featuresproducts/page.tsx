@@ -74,7 +74,7 @@ const ProdFeature = () => {
                     </div>
                   )}
                   <div className=" flex flex-col items-center gap-y-3 pt-3 ">
-                    <p className="font-bold text-sky-300">{product.title.slice(0, 10)}</p>
+                    <p className="font-semibold text-sky-300">{product.title.slice(0, 10)}</p>
                     <p className="px-6 font-extralight text-center line-clamp-2 ">
                       {product.description.slice(0, 48)}
                     </p>
